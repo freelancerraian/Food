@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/* header css start */
+header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: rgb(39 37 24 / 77%);
+}
+header .logo
+{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky
+{
+    background: #FFF;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo span
+{
+    color: #FF0157;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .navication
+{
+    position: relative;
+    display: flex;
+}
+header .navication li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navication li a
+{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+}
+header .navication li a:hover
+{
+    color: #FF0157;
+}
+header.sticky .navication li a
+{
+    color: #111;
+}
+header.sticky .navication li a:hover
+{
+    color: #FF0157;
+}
+/* header css end  */
+
+/* main css start */
+/* sec-home css start*/
+.sec-home{
+    display: flex;
+    width: 100%;
+}
+.sec-home .home-1{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.sec-home .home-1 h1{
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.sec-home .home-1 p{
+    font-size: 25px;
+    color: rgba(2, 1, 0, 0.904);
+    padding-bottom: 50px;
+}
+.sec-home .home-1 button{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 15px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(45deg,rgb(39 37 24 / 77%),rgb(182, 151, 151));
+    box-shadow: 5px 0px 19px -3px #866868;
+}
+.sec-home .home-1 span{
+    color: #FF0157;
+}
+.sec-home .home-2{
+    width: 50%;
+    margin-left: 5%;
+}
+.sec-home .home-2 img{
+    width: 100%;
+}
+/* sec-home css end*/
+
+/* sec-aboutme css start */
+.sec-about{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    background-image: url(images/shapes/7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aboutdiv-1{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.aboutdiv-1 img{
+    width: 60%;
+    margin: 0 auto;
+}
+.aboutdiv-2{
+    width: 50%;
+    padding-top: 10%;
+}
+.aboutdiv-2 h1{
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.aboutdiv-2 p{
+    font-size: 25px;
+    color: rgba(2, 1, 0, 0.904);
+    padding-bottom: 50px;
+}
+.aboutdiv-2 button{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 15px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(45deg,rgb(39 37 24 / 77%),rgb(182, 151, 151));
+    box-shadow: 5px 0px 19px -3px #866868;
+    margin-bottom: 30px;
+}
+/* sec-aboutme css end */
+
+/* recipies start */
+.sec-recipies{
+    text-align: center;
+    margin-top: 200px;
+}
+.sec-recipies .rec-h{
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.sec-recipies .rec-p{
+    font-size: 25px;
+    color: rgba(2, 1, 0, 0.904);
+    padding-bottom: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+.card-main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card-1{
+    width: 25%;
+    margin: 25px;
+    box-shadow: rgb(206 191 191) 0px 0px 10px 0px;
+    border-radius:10px;
+}
+.card-2{
+    width: 25%;
+    margin: 25px;
+    box-shadow: rgb(206 191 191) 0px 0px 10px 0px;
+    border-radius:10px;
+}
+.card-3{
+    width: 25%;
+    margin: 25px;
+    box-shadow: rgb(206 191 191) 0px 0px 10px 0px;
+    border-radius:10px;
+}
+.card-main button{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 15px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(45deg,rgb(39 37 24 / 77%),rgb(182, 151, 151));
+    box-shadow: 5px 0px 19px -3px #866868;
+    margin-bottom: 30px;
+}
+.card-main img{
+    width: 100%;
+    border-radius:20px;
+    padding: 10px;
+    height: 310px;
+}
+.card-main h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.card-main p{
+    font-size: 20px;
+    color: rgba(2, 1, 0, 0.904);
+    padding: 5px 5px 50px 5px;
+}
+/* recipies start */
+
+/* folower start */
+.sec-folower {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.folower-main{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(206 191 191) 0px 0px 10px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.card-folower{
+    padding: 0px 45px 0px 15px;
+}
+/* folower end */
+/* main css end */
+
+/* footer css start */
+footer{
+    background-color: rgb(39 37 24 / 77%);
+    color: #FFF;
+    text-align: center;
+    margin-top: 150px;
+    padding: 50px;
+}
+footer span{
+    color: #FF0157;
+}
+footer h1{
+    margin-bottom: 20px;
+}
+/* footer css end */
